@@ -54,7 +54,7 @@ public class OrderRepository {
         return orderPartnerMap.get(partnerId).size();
     }
 
-    public List<String> getOrderByPartnerId(String partnerId){
+    public List<String> getOrdersByPartnerId(String partnerId){
         List<String> orderList = new ArrayList<>();
 
         List<String> orderIdList = orderPartnerMap.get(partnerId);

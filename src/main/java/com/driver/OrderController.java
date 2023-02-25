@@ -70,8 +70,8 @@ public class OrderController {
     }
 
     @GetMapping("/get-orders-by-partner-id/{partnerId}")
-    public ResponseEntity<List<String>> getOrderByPartnerId(@PathVariable String partnerId){
-        List<String> orders = orderService.getOrderByPartnerId(partnerId);
+    public ResponseEntity<List<String>> getOrdersByPartnerId(@PathVariable String partnerId){
+        List<String> orders = orderService.getOrdersByPartnerId(partnerId);
 
         //orders should contain a list of orders by PartnerId
 
